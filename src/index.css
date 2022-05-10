@@ -1,13 +1,95 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+header,
+footer {
+  background-color: #f8c50f;
+  /* height: 15vh; */
+  height: 11vh;
+  color: white;
+  padding: 2rem;
+
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 24px;
+  color: white;
+}
+
+main {
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.menu {
+  color: white;
+  text-decoration: none;
+}
+.menu:visited {
+  color: white;
+}
+
+.menu:hover {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: red;
+} */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: black;
+}
+
+.card {
+  box-shadow: 0 0 5px rgb(92, 92, 92);
+  border-radius: 5px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  height: auto;
+  /* height: 10rem; */
+  width: 15rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+img {
+  height: 150px;
+  width: 100%;
 }
