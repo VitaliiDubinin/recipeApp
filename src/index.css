@@ -6,6 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -44,7 +48,7 @@ li {
 }
 
 main {
-  min-height: 60vh;
+  min-height: 78vh;
   padding: 2rem;
 }
 
@@ -61,14 +65,14 @@ main {
   font-size: 28px;
 }
 
-/* a,
+a,
 a:hover,
 a:active,
 a:visited,
 a:focus {
   text-decoration: none;
-  color: red;
-} */
+  /* color: red; */
+}
 
 .cards {
   display: grid;
@@ -118,4 +122,65 @@ h3 {
 .emonav {
   font-size: 6rem;
   color: #f8c50f;
+  text-decoration: none;
+  margin-right: 7rem;
+}
+
+#video {
+  /* position: relative; */
+  z-index: -1;
+  width: 15vw;
+  height: 60vh;
+}
+
+.homeMain {
+  display: flex;
+}
+
+.homeNav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+/* .emonav,
+.emonav:active,
+.emonav:hover,
+.menu:visited {
+  text-decoration: double;
+  background-color: aqua;
+  margin: 1px 1px;
+  padding: 1px;
+} */
+
+.emonav:hover {
+  font-size: 6.3rem;
+  /* text-shadow: 2px; */
+}
+
+.spanImage {
+  background-image: url("./assets/recipe-575434_1280.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute; */
+
+  width: 6rem;
+  height: 6rem;
+  /* color: #4fa908; */
+  color: #f8c50f;
+}
+
+.flag {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border-color: blue;
+  border-style: solid;
+  border-width: 0.1rem;
+  background-size: cover;
+  position: relative;
+  top: -3.5rem;
+  left: -7rem;
 }

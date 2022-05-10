@@ -1,19 +1,76 @@
 {
-  "posts": [
+  "recipes": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "nice bowl",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-veg-bowl-afa343f.jpg?quality=90&webp=true&resize=440,400",
+      "alter": "biautefull bowl hear",
+      "likes": "65",
+      "author": "Mula",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTmn4GqDhbggwT7nR_IBL9fqi-hh2ipVlmw&usqp=CAU",
+
+      "instruction": "You can dio it easy and eat without extra ingredients",
+      "country": "BG",
+      "flag": "https://flagcdn.com/bg.svg",
+      "description": "Description",
+      "ingredN1": "salt",
+      "ingredN2": "paper",
+      "ingredN3": "bob",
+      "ingredN4": "shalot",
+      "ingredN5": "salmon",
+      "ingredQ1": "2g",
+      "ingredQ2": "1g",
+      "ingredQ3": "1/2 glass",
+      "ingredQ4": "3pcs",
+      "ingredQ5": "128g"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "pizza",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/pizza-with-homemade-sauce-b7beea0.jpg?quality=90&webp=true&resize=440,400",
+      "alter": "Who against Pizza??",
+      "likes": "83",
+      "author": "Timano",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ILDAUQAeefyUmFbVyOaUWjBS8SZILdmYLQ&usqp=CAU",
+
+      "instruction": "You can like it or you can love it",
+      "country": "IT",
+      "flag": "https://flagcdn.com/it.svg",
+      "description": "Pizza Description",
+      "ingredN1": "salt",
+      "ingredN2": "paper",
+      "ingredN3": "bob",
+      "ingredN4": "shalot",
+      "ingredN5": "salmon",
+      "ingredQ1": "2g",
+      "ingredQ2": "1g",
+      "ingredQ3": "1/2 glass",
+      "ingredQ4": "3pcs",
+      "ingredQ5": "128g"
+    },
+    {
+      "id": 3,
+      "name": "shrimp tost",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/rice-paper-wraps-de78204.jpg?quality=90&webp=true&resize=440,400",
+      "alter": "Who against Pizza??",
+      "likes": "83",
+      "author": "Bebe",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1087YL-L2cDqQgxIAhOLEFeOTwfHLvZnCA&usqp=CAU",
+
+      "instruction": "You can like it or you can love it",
+      "country": "NZ",
+      "flag": "https://flagcdn.com/nz.svg",
+      "description": "Shrimp tost Description",
+      "ingredN1": "salt",
+      "ingredN2": "paper",
+      "ingredN3": "bob",
+      "ingredN4": "shalot",
+      "ingredN5": "shrimp",
+      "ingredQ1": "2g",
+      "ingredQ2": "1g",
+      "ingredQ3": "1/2 glass",
+      "ingredQ4": "3pcs",
+      "ingredQ5": "128g"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
