@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-const RecipeSingle = () => {
+const RecipeSingle = (props) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState();
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://pokeapi.co/api/v2/pokemon/${this.props.params.recipesingle}`)
+    // fetch(`https://pokeapi.co/api/v2/pokemon/${this.props.params.recipesingle}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${props.params.recipesingle}`)
       .then((res) => res.json())
-      .then((jsdata) => {
-        setData(jsdata);
+      .then((data) => {
+        setData(data);
         setIsLoading(false);
       });
   }, []);
@@ -19,8 +20,9 @@ const RecipeSingle = () => {
   } else {
     return (
       <div>
-        <h3>{this.state.data.name}</h3>single Pokemon will be here
-        <img src={this.state.data.sprites?.other.dream_world.front_default} alt={this.state.data.name} />
+        <h3>{data.name}</h3>
+        single Pokemon will be here
+        <img src={data.sprites?.other.dream_world.front_default} alt={data.name} />
       </div>
     );
   }

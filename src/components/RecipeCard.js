@@ -8,9 +8,14 @@ const RecipeCard = (props) => {
 
       <h3>{props.name}</h3>
 
-      <Link to={`${props.name}`}>
-        <h4>See more</h4>
-      </Link>
+      <div>short recipe description not more than 25 words</div>
+
+      <Link to={`${props.name}`}>See more</Link>
+      <span onClick={props.add} className="material-icons likeBut">
+        favorite
+      </span>
+
+      <div className="likes">5{props.like}</div>
     </div>
   );
 };

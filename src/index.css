@@ -93,3 +93,29 @@ img {
   height: 150px;
   width: 100%;
 }
+
+.likeBut {
+  color: red;
+  position: relative;
+  top: 0.5rem;
+  left: 1.5rem;
+  border-style: none;
+  background-color: transparent;
+}
+
+.likes {
+  /* margin: 0 auto; */
+  color: blue;
+  position: relative;
+  left: 5rem;
+  top: -1rem;
+}
+
+h3 {
+  text-align: left;
+}
+
+.emonav {
+  font-size: 6rem;
+  color: #f8c50f;
+}
