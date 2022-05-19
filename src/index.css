@@ -181,6 +181,25 @@ h3 {
   border-width: 0.1rem;
   background-size: cover;
   position: relative;
-  top: -3.5rem;
+  top: -16rem;
   left: -7rem;
+}
+
+.inputForm {
+  color: red;
+  display: inline-block;
+  max-width: 240px;
+  margin: 1.5rem auto;
+}
+
+input,
+textarea,
+select {
+  font-family: "Roboto" sans-serif;
+  background: #f4f4f4;
+  border: 1px solid rgb(102, 102, 102);
+  width: 250px;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }

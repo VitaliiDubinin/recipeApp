@@ -5,22 +5,31 @@ import axios from "axios";
 const Recipes = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState();
+  const [recipes, setRecipes] = useState([]);
+  const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setIsLoading(true);
-  //   fetch("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       const fetches = data.results.map((p) => {
-  //         return fetch(p.url).then((res) => res.json());
-  //       });
+  const getRecipes = () => axios.get("http://localhost:3010/recipes");
+  const getCountries = () => axios.get("https://restcountries.com/v3.1/all");
 
-  //       Promise.all(fetches).then((res) => {
-  //         setData(res);
-  //         setIsLoading(false);
-  //       });
-  //     });
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+    Promise.all([getRecipes(), getCountries()]).then(function (results) {
+      const recipesData = results[0];
+      const countriesData = results[1]; // because countries starts from first index
+      // console.log(countriesData.data);
+      // console.log(countriesData.data.map((e) => [e.flag, e.cca2, e.name.common]));
+
+      setRecipes(recipesData.data);
+      // console.log(recipes);
+      setCountries(countriesData.data);
+      console.log(countries);
+      // console.log(countries.find((country) => country.cca2 === "BG"));
+      console.log(countries.find((country) => country.cca2 === "BG"));
+
+      setLoading(false);
+    });
+  }, []);
 
   // useEffect(() => {
   //   axios.get("https://restcountries.com/v3.1/name/japan").then((res) => console.log(res.data));
@@ -35,20 +44,25 @@ const Recipes = () => {
   //   axios.get("https://restcountries.com/v3.1/name/bulgaria").then((res) => console.log(res.data[0].flags.svg));
   // }, []);
 
-  useEffect(() => {
-    axios.get("http://localhost:3010/recipes").then((res) => setData(res.data));
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:3010/recipes").then((res) => setData(res.data));
+  // }, []);
 
   if (isLoading) {
     return <p>Loading....</p>;
   } else {
+    // return (
+    //   <div className="cards">
+    //     {data.map((p) => (
+    //       <RecipeCard name={p.name} key={p.id} image={p.image} alter={p.alter} likes={p.likes} description={p.description} flag={p.flag} />
+    //     ))}
+    //   </div>
+    // );
+
     return (
       <div className="cards">
-        {/* {data.map((p) => (
-          <RecipeCard name={p.name} key={p.name} image={p.sprites.other.dream_world.front_default} />
-        ))} */}
-        {data.map((p) => (
-          <RecipeCard name={p.name} key={p.id} image={p.image} alter={p.alter} likes={p.likes} description={p.description} flag={p.flag} />
+        {recipes.map((recipe) => (
+          <RecipeCard key={recipe.id} data={recipe} country={countries.find((country) => country.cca2 === recipe.country2)} {...recipe} />
         ))}
       </div>
     );

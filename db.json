@@ -8,21 +8,38 @@
       "likes": "65",
       "author": "Mula",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTmn4GqDhbggwT7nR_IBL9fqi-hh2ipVlmw&usqp=CAU",
-
       "instruction": "You can dio it easy and eat without extra ingredients",
-      "country": "BG",
+      "country2": "BG",
+      "countrycode": "392",
       "flag": "https://flagcdn.com/bg.svg",
       "description": "Description",
-      "ingredN1": "salt",
-      "ingredN2": "paper",
-      "ingredN3": "bob",
-      "ingredN4": "shalot",
-      "ingredN5": "salmon",
-      "ingredQ1": "2g",
-      "ingredQ2": "1g",
-      "ingredQ3": "1/2 glass",
-      "ingredQ4": "3pcs",
-      "ingredQ5": "128g"
+      "ingreds": [
+        {
+          "id": 1,
+          "ingredN": "salt",
+          "ingredQ": "2g"
+        },
+        {
+          "id": 2,
+          "ingredN": "paper",
+          "ingredQ": "1g"
+        },
+        {
+          "id": 3,
+          "ingredN": "bob",
+          "ingredQ": "1/2 glass"
+        },
+        {
+          "id": 4,
+          "ingredN": "shalot",
+          "ingredQ": "salmon"
+        },
+        {
+          "id": 5,
+          "ingredN": "3pcs",
+          "ingredQ": "128g"
+        }
+      ]
     },
     {
       "id": 2,
@@ -32,21 +49,38 @@
       "likes": "83",
       "author": "Timano",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ILDAUQAeefyUmFbVyOaUWjBS8SZILdmYLQ&usqp=CAU",
-
       "instruction": "You can like it or you can love it",
-      "country": "IT",
+      "country2": "IT",
+      "countrycode": "044",
       "flag": "https://flagcdn.com/it.svg",
       "description": "Pizza Description",
-      "ingredN1": "salt",
-      "ingredN2": "paper",
-      "ingredN3": "bob",
-      "ingredN4": "shalot",
-      "ingredN5": "salmon",
-      "ingredQ1": "2g",
-      "ingredQ2": "1g",
-      "ingredQ3": "1/2 glass",
-      "ingredQ4": "3pcs",
-      "ingredQ5": "128g"
+      "ingreds": [
+        {
+          "id": 1,
+          "ingredN": "salt",
+          "ingredQ": "2g"
+        },
+        {
+          "id": 2,
+          "ingredN": "paper",
+          "ingredQ": "1g"
+        },
+        {
+          "id": 3,
+          "ingredN": "bob",
+          "ingredQ": "1/2 glass"
+        },
+        {
+          "id": 4,
+          "ingredN": "shalot",
+          "ingredQ": "salmon"
+        },
+        {
+          "id": 5,
+          "ingredN": "3pcs",
+          "ingredQ": "128g"
+        }
+      ]
     },
     {
       "id": 3,
@@ -56,21 +90,122 @@
       "likes": "83",
       "author": "Bebe",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1087YL-L2cDqQgxIAhOLEFeOTwfHLvZnCA&usqp=CAU",
-
       "instruction": "You can like it or you can love it",
-      "country": "NZ",
+      "country2": "NZ",
+      "countrycode": "123",
       "flag": "https://flagcdn.com/nz.svg",
       "description": "Shrimp tost Description",
-      "ingredN1": "salt",
-      "ingredN2": "paper",
-      "ingredN3": "bob",
-      "ingredN4": "shalot",
-      "ingredN5": "shrimp",
-      "ingredQ1": "2g",
-      "ingredQ2": "1g",
-      "ingredQ3": "1/2 glass",
-      "ingredQ4": "3pcs",
-      "ingredQ5": "128g"
+      "ingreds": [
+        {
+          "id": 1,
+          "ingredN": "salt",
+          "ingredQ": "2g"
+        },
+        {
+          "id": 2,
+          "ingredN": "paper",
+          "ingredQ": "1g"
+        },
+        {
+          "id": 3,
+          "ingredN": "bob",
+          "ingredQ": "1/2 glass"
+        },
+        {
+          "id": 4,
+          "ingredN": "shalot",
+          "ingredQ": "salmon"
+        },
+        {
+          "id": 5,
+          "ingredN": "3pcs",
+          "ingredQ": "128g"
+        }
+      ],
+      "message": "dsfsd"
+    },
+    {
+      "name": "sas",
+      "image": "dsdf",
+      "likes": "",
+      "author": "dfdf",
+      "avatar": "gfddf",
+      "instruction": "xvcx",
+      "country2": "FI",
+      "countrycode": "333",
+      "flag": "xzc",
+      "description": "",
+      "ingreds": [
+        {
+          "id": 1,
+          "ingredN": "salt",
+          "ingredQ": "2g"
+        },
+        {
+          "id": 2,
+          "ingredN": "paper",
+          "ingredQ": "1g"
+        },
+        {
+          "id": 3,
+          "ingredN": "bob",
+          "ingredQ": "1/2 glass"
+        },
+        {
+          "id": 4,
+          "ingredN": "shalot",
+          "ingredQ": "salmon"
+        },
+        {
+          "id": 5,
+          "ingredN": "3pcs",
+          "ingredQ": "128g"
+        }
+      ],
+      "message": "dsfsd",
+      "id": 4
+    },
+    {
+      "name": "Ice-cream",
+      "image": "https://www.thespruceeats.com/thmb/RrP9qTWy2BbntDB6GCwWi8Yy29U=/3000x2000/filters:fill(auto,1)/UbeIceCreamHERO-ae953a4c3ede4690bd2f0ccbc104ea12.jpg",
+      "likes": "",
+      "author": "Mea",
+      "avatar": "https://www.mea.com.lb/images/ShareLogo.jpg",
+      "instruction": "Eat it",
+      "country2": "US",
+      "countrycode": "213",
+      "flag": "find it",
+      "ingreds": [
+        {
+          "id": 1,
+          "ingredN": "salt",
+          "ingredQ": "2g"
+        },
+        {
+          "id": 2,
+          "ingredN": "paper",
+          "ingredQ": "1g"
+        },
+        {
+          "id": 3,
+          "ingredN": "bob",
+          "ingredQ": "1/2 glass"
+        },
+        {
+          "id": 4,
+          "ingredN": "shalot",
+          "ingredQ": "salmon"
+        },
+        {
+          "id": 5,
+          "ingredN": "3pcs",
+          "ingredQ": "128g"
+        }
+      ],
+      "desription": "!!!",
+      "message": "wow!",
+      "id": 5
     }
-  ]
+  ],
+  "countries": []
 }
