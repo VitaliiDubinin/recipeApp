@@ -3,7 +3,7 @@ import Popup from "./Popup";
 import AddRecForm from "./AddRecForm";
 import axios from "axios";
 
-const AddRecipe = () => {
+const AddRecipeW = () => {
   const [inputData, setInputData] = useState({
     name: "",
     image: "",
@@ -131,7 +131,7 @@ const AddRecipe = () => {
 
   return (
     <div>
-      {console.log(countryList)}
+      {/* {console.log(countryList)} */}
       {/* {console.log(JSON.stringify(Object.assign({}, countryList)))} */}
       {/* {console.log(data)} */}
       {/* {console.log(countryList[0].forEach((e) => JSON.stringify(Object.assign({}, e))))} */}
@@ -144,4 +144,4 @@ const AddRecipe = () => {
   );
 };
 
-export default AddRecipe;
+export default AddRecipeW;

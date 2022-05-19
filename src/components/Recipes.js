@@ -3,7 +3,7 @@ import RecipeCard from "./RecipeCard";
 import axios from "axios";
 
 const Recipes = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState();
   const [recipes, setRecipes] = useState([]);
   const [countries, setCountries] = useState([]);
