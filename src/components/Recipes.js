@@ -8,6 +8,7 @@ const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState("");
 
   const getRecipes = () => axios.get("http://localhost:3010/recipes");
   const getCountries = () => axios.get("https://restcountries.com/v3.1/all");
@@ -47,6 +48,19 @@ const Recipes = () => {
   // useEffect(() => {
   //   axios.get("http://localhost:3010/recipes").then((res) => setData(res.data));
   // }, []);
+  const searchHandler = (e) => {
+    // console.log(e.target.value);
+    // this.state.search=e.target.value   -not doing that , mutating direction
+
+    setSearch(e.target.value);
+    // console.log(search);
+  };
+
+  const animalFilter = recipes.filter((res) => {
+    return res.name.toLowerCase().includes(search.toLowerCase());
+    // return recipe.name.includes(search);
+    // return console.log(r.name.includes(search).toLowerCase());
+  });
 
   if (isLoading) {
     return <p>Loading....</p>;
@@ -60,11 +74,16 @@ const Recipes = () => {
     // );
 
     return (
-      <div className="cards">
-        {recipes.map((recipe) => (
-          <RecipeCard key={recipe.id} data={recipe} country={countries.find((country) => country.cca2 === recipe.country2)} {...recipe} />
-        ))}
-      </div>
+      <>
+        <input type="text" onChange={searchHandler} />
+        <h3>{search}</h3>
+        <div className="cards">
+          {animalFilter.map((recipe) => (
+            // {recipes.map((recipe) => (
+            <RecipeCard key={recipe.id} data={recipe} country={countries.find((country) => country.cca2 === recipe.country2)} {...recipe} />
+          ))}
+        </div>
+      </>
     );
   }
 };

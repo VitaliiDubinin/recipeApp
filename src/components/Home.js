@@ -11,9 +11,9 @@ const Home = () => {
         </video>
       </div>
       <div className="homeNav">
-        {/* <Link to="/"> */}
-        <div className="noto-emoji emonav">👀 📝 ?</div>
-        {/* </Link> */}
+        <Link to="/">
+          <div className="noto-emoji emonav">👀 📝 ?</div>
+        </Link>
         <Link to="/about">
           <div className="noto-emoji emonav">🧍🏻‍♀️👫🏿👫🧍🏻</div>
         </Link>
