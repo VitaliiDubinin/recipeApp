@@ -235,3 +235,7 @@ select {
   /* font-weight: bold; */
   padding: unset;
 }
+
+.search {
+  text-align: center;
+}

@@ -45,7 +45,7 @@ const AddRecForm = () => {
 
   // This event handler is reacting to our select event handler. We get the value from select, and then we find the correct alpha2Code. After that, we save valid code to the Data state.
   const changeCountry = (e) => {
-    // console.log(countries, e.target.value);
+    console.log(countries, e.target.value);
     const correctCountry = countries.find((c) => c.cca2 === e.target.value);
 
     setData({ ...data, country2: correctCountry.cca2 });

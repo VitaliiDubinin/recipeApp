@@ -24,9 +24,9 @@ const Recipes = () => {
       setRecipes(recipesData.data);
       // console.log(recipes);
       setCountries(countriesData.data);
-      console.log(countries);
+      // console.log(countries);
       // console.log(countries.find((country) => country.cca2 === "BG"));
-      console.log(countries.find((country) => country.cca2 === "BG"));
+      // console.log(countries.find((country) => country.cca2 === "BG"));
 
       setLoading(false);
     });
@@ -75,8 +75,11 @@ const Recipes = () => {
 
     return (
       <>
-        <input type="text" onChange={searchHandler} />
-        <h3>{search}</h3>
+        <div className="search">
+          <input type="text" placeholder="🔍" onChange={searchHandler} />
+          <h3>{search}</h3>
+        </div>
+
         <div className="cards">
           {animalFilter.map((recipe) => (
             // {recipes.map((recipe) => (

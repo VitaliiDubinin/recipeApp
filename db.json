@@ -317,6 +317,22 @@
       ],
       "instruction": "sds",
       "id": 11
+    },
+    {
+      "name": "Delicios for Dog",
+      "image": "https://m.media-amazon.com/images/I/6124uEWU4iL._AC_SL1500_.jpg",
+      "author": "Fly",
+      "description": "extra for dogs",
+      "country2": "AM",
+      "ingreds": [
+        {
+          "id": 1,
+          "ingredN": "Bone",
+          "ingredQ": "1"
+        }
+      ],
+      "instruction": "eat if faster",
+      "id": 12
     }
   ]
 }
