@@ -186,10 +186,20 @@ h3 {
 }
 
 .inputForm {
-  color: red;
-  display: inline-block;
-  max-width: 240px;
+  color: #4fa908;
+  display: inline;
+  font-weight: bold;
+  max-width: 15rem;
   margin: 1.5rem auto;
+}
+
+form > div > label,
+form > div > div > label,
+legend {
+  width: 15%;
+  float: left;
+
+  /* padding-right: 10px; */
 }
 
 input,
@@ -197,9 +207,31 @@ textarea,
 select {
   font-family: "Roboto" sans-serif;
   background: #f4f4f4;
+  background-color: white;
   border: 1px solid rgb(102, 102, 102);
-  width: 250px;
+  height: 2rem;
+  width: 17rem;
   padding: 0.8rem;
   border-radius: 5px;
   font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.adrepbut {
+  width: 28rem;
+  vertical-align: text-top;
+  background-color: #4fa908;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: unset;
+}
+.adingbut {
+  width: 10rem;
+  vertical-align: text-top;
+  background-color: #4fa908;
+  color: white;
+  font-size: 0.9rem;
+  /* font-weight: bold; */
+  padding: unset;
 }

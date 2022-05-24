@@ -24,7 +24,22 @@ const AddRecForm = () => {
   // Getting data for all 250 countries
   useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all").then((res) => {
-      setCountries(res.data);
+      // setCountries(res.data);
+      setCountries(
+        // countries.sort(function (a, b) {
+        res.data.sort(function (a, b) {
+          const contA = a.name.common.toUpperCase();
+          const contB = b.name.common.toUpperCase();
+          if (contA < contB) {
+            return -1;
+          }
+          if (contA > contB) {
+            return 1;
+          }
+
+          return 0;
+        })
+      );
     });
   }, []);
 
@@ -69,7 +84,8 @@ const AddRecForm = () => {
     // Please note that you have to declare each input handler separately because we have three different kinds of input handlers. Otherwise, the latest handler will overwrite the previous ones.
 
     // <form onSubmit={console.log(data)}>
-    <form onSubmit={submitData}>
+
+    <form className="inputForm" onSubmit={submitData}>
       <div>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" onChange={changeData} />
@@ -97,27 +113,29 @@ const AddRecForm = () => {
         <label htmlFor="image">Image url</label>
         <input type="url" name="image" id="image" onChange={changeData} />
       </div>
-      <p>Ingredients</p>
+      <p>Ingredients:</p>
       {ingredients.map((_, i) => {
         return (
           <div key={i}>
             <div>
               <label htmlFor="quantity">Quantity</label>
-              <input type="text" name="ingredQ" id="quantity" onChange={(e) => changeIncData(e, i)} />
+              <input type="text" name="ingredQ" id="quantity" className="feedback-input" onChange={(e) => changeIncData(e, i)} />
             </div>
             <div>
               <label htmlFor="incName">Ingredient</label>
-              <input type="text" name="ingredN" id="incName" onChange={(e) => changeIncData(e, i)} />
+              <input type="text" name="ingredN" id="incName" className="feedback-input" onChange={(e) => changeIncData(e, i)} />
             </div>
           </div>
         );
       })}
-      <button onClick={addMore}>Add more ingredients</button>
+      <button className="adingbut" onClick={addMore}>
+        Add more ingredients
+      </button>
       <div>
         <label htmlFor="instruct">Instructions</label>
-        <textarea type="text" name="instruction" id="instruct" onChange={changeData} />
+        <textarea type="text" name="instruction" id="instruct" className="feedback-input" onChange={changeData} />
       </div>
-      <input type="submit" value="Add recipe" />
+      <input className="adrepbut" type="submit" value="Add recipe" />
     </form>
 
     // <form className="inputForm" onChange={props.change} onSubmit={props.submit}>
