@@ -8,18 +8,18 @@ const Nav = () => {
       <ul>
         <li>
           <Link to="/" className="menu">
-            Home
+            🏠
           </Link>
         </li>
         <li>
           <Link to="/recipes" className="menu">
-            Recipes
+            📝
           </Link>
         </li>
 
         <li>
-          <Link to="/addrecipe" className="menu">
-            Add new recipe
+          <Link to="/addrecipe" className="menu2 noto-emoji emonav spanImage">
+            +
           </Link>
         </li>
       </ul>

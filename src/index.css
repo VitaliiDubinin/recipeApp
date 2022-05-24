@@ -55,6 +55,7 @@ main {
 .menu {
   color: white;
   text-decoration: none;
+  font-size: 3rem;
 }
 .menu:visited {
   color: white;
@@ -238,4 +239,8 @@ select {
 
 .search {
   text-align: center;
+}
+
+.menu2 {
+  font-size: 3rem;
 }
