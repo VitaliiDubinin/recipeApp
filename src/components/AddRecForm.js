@@ -102,6 +102,7 @@ const AddRecForm = () => {
         <label htmlFor="countryCode">Recipe is from:</label>
         <select name="country2" id="countryCode" onChange={changeCountry}>
           <option value="FI"> please select</option>
+          <option value="FI"> please select</option>
           {countries.map((c) => (
             <option key={c.cca2} value={c.cca2}>
               {c.name.common}

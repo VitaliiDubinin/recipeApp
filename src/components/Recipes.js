@@ -56,7 +56,7 @@ const Recipes = () => {
     // console.log(search);
   };
 
-  const animalFilter = recipes.filter((res) => {
+  const recipeFilter = recipes.filter((res) => {
     return res.name.toLowerCase().includes(search.toLowerCase());
     // return recipe.name.includes(search);
     // return console.log(r.name.includes(search).toLowerCase());
@@ -81,7 +81,7 @@ const Recipes = () => {
         </div>
 
         <div className="cards">
-          {animalFilter.map((recipe) => (
+          {recipeFilter.map((recipe) => (
             // {recipes.map((recipe) => (
             <RecipeCard key={recipe.id} data={recipe} country={countries.find((country) => country.cca2 === recipe.country2)} {...recipe} />
           ))}
