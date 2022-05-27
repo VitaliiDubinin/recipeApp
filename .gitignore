@@ -24,3 +24,10 @@ yarn-error.log*
 
 .png
 .gitignore
+/materialsFor
+**/dbjson_rec.txt
+**/memoryList.docx
+**/.mp4
+**/orig_db.json
+**/AddRecipeW.js
+**/dbcountry.json

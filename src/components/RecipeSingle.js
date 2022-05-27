@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+// import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const RecipeSingle = () => {
@@ -35,10 +36,24 @@ const RecipeSingle = () => {
   console.log(country);
 
   return (
-    <div className="card">
+    <div className="singlecard">
       <h1>{recipe.name}</h1>
-      <img src={recipe.image} alt={recipe.name} />
-      <img className="flag" src={country.flags.png} alt={country.name.common} />
+      <img className="singcardimage" src={recipe.image} alt={recipe.name} />
+      <img className="flagsq" src={country.flags.png} alt={country.name.common} />
+      <p>Author:{recipe.author}</p>
+      <p>Description:{recipe.description}</p>
+      <p>Instruction:{recipe.instruction}</p>
+
+      {/* {console.log(recipe.ingreds[0])} */}
+      {console.log(recipe.ingreds.map((ing) => [ing.ingredN, ing.ingredQ]))}
+      {/* {console.log(recipe.ingreds.map((ing) => [([ing.ingredN] = ing.ingredQ)]))} */}
+      <ul className="ulsing">
+        {recipe.ingreds.map((ing) => [
+          <li key={ing.id}>
+            {[ing.ingredN]}: {[ing.ingredQ]}
+          </li>,
+        ])}
+      </ul>
     </div>
   );
 };
