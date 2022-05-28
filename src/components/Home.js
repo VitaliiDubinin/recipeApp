@@ -12,16 +12,16 @@ const Home = () => {
         </video>
         {/* </div> */}
         <div className="homeNav">
-          <Link to="/">
+          <Link to="/recipeApp">
             <div className="noto-emoji emonav">👀 📝 ?</div>
           </Link>
-          <Link to="/about">
+          <Link to="/recipeApp/about">
             <div className="noto-emoji emonav">🧍🏻‍♀️👫🏿👫🧍🏻</div>
           </Link>
-          <Link to="/addrecipe">
+          <Link to="/recipeApp/addrecipe">
             <div className="noto-emoji emonav spanImage">+ </div>
           </Link>
-          <Link to="/recipes">
+          <Link to="/recipeApp/recipes">
             <div className="noto-emoji emonav">👩‍🍳👨‍🍳 </div>
           </Link>
         </div>

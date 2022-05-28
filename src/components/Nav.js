@@ -7,18 +7,18 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/" className="menu">
+          <Link to="/recipeApp" className="menu">
             🏠
           </Link>
         </li>
         <li>
-          <Link to="/recipes" className="menu">
+          <Link to="/recipeApp/recipes" className="menu">
             📝
           </Link>
         </li>
 
         <li>
-          <Link to="/addrecipe" className="menu2 emonav2">
+          <Link to="/recipeApp/addrecipe" className="menu2 emonav2">
             <span className="spanImage2">.+ .</span>
           </Link>
         </li>

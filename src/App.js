@@ -20,12 +20,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/recipeApp" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="recipes" element={<Recipes />} />
-          <Route path="recipes/:recipesingle" element={<RouterWrapper />} />
-          <Route path="addrecipe" element={<AddRecForm />} />
+          <Route path="/recipeApp/about" element={<About />} />
+          <Route path="/recipeApp/recipes" element={<Recipes />} />
+          <Route path="/recipeApp/recipes/:recipesingle" element={<RouterWrapper />} />
+          <Route path="/recipeApp/addrecipe" element={<AddRecForm />} />
         </Route>
       </Routes>
     </BrowserRouter>
