@@ -34,7 +34,6 @@ const Popup = (props) => {
           Message: <span>{props.likes}</span>
         </p>
 
-        {/* <button onClick={props.close}>Yes, I am shure</button> */}
         <button onClick={props.submit}>Yes, I am shure</button>
         <button onClick={props.close}>No, I don't want to post it</button>
       </div>

@@ -45,11 +45,11 @@ const AddRecForm = () => {
 
   // This event handler is reacting to our select event handler. We get the value from select, and then we find the correct alpha2Code. After that, we save valid code to the Data state.
   const changeCountry = (e) => {
-    console.log(countries, e.target.value);
+    // console.log(countries, e.target.value);
     const correctCountry = countries.find((c) => c.cca2 === e.target.value);
 
     setData({ ...data, country2: correctCountry.cca2 });
-    console.log(correctCountry);
+    // console.log(correctCountry);
   };
 
   // basic onChange event for regular inputs
@@ -74,10 +74,9 @@ const AddRecForm = () => {
 
   // After we have all data collected from inputs, we post the Data object from state.
   const submitData = () => {
-    axios
-      .post("http://localhost:3010/recipes", data)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
+    axios.post("http://localhost:3010/recipes", data);
+    // .then((res) => console.log(res))
+    // .catch((error) => console.log(error));
   };
 
   return (

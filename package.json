@@ -1,6 +1,5 @@
 {
   "name": "recipeapp",
-  "homepage": "https://vitaliidubinin.github.io/recipeApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
