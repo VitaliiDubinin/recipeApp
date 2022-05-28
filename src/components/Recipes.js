@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Recipes = () => {
   // const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState();
+  // const [isLoading, setIsLoading] = useState();
   const [recipes, setRecipes] = useState([]);
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -62,7 +62,7 @@ const Recipes = () => {
     // return console.log(r.name.includes(search).toLowerCase());
   });
 
-  if (isLoading) {
+  if (loading) {
     return <p>Loading....</p>;
   } else {
     // return (
