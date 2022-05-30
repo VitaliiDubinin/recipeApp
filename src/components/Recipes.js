@@ -8,7 +8,8 @@ const Recipes = () => {
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
 
-  const getRecipes = () => axios.get("http://localhost:3010/recipes");
+  // const getRecipes = () => axios.get("http://localhost:3010/recipes");
+  const getRecipes = () => axios.get("https://my-json-server.typicode.com/vitaliidubinin/jsonforrecipeapp/recipes");
   const getCountries = () => axios.get("https://restcountries.com/v3.1/all");
 
   useEffect(() => {
