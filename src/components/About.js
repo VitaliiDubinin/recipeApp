@@ -11,6 +11,10 @@ const About = () => {
       Full Stack Development programm.
       <br />
       Thanks a lot our teachers, and especially Margit.
+      <br />
+      Thanks Ekaterina Bolovtsova for shared video on pexels. <br />
+      I was inpired photos and videos. <br />
+      https://www.pexels.com/@ekaterina-bolovtsova/
     </div>
   );
 };
