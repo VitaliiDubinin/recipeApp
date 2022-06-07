@@ -31,4 +31,4 @@ yarn-error.log*
 **/orig_db.json
 **/AddRecipeW.js
 **/dbcountry.json
-/json_files
+# /json_files

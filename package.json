@@ -1,6 +1,5 @@
 {
   "name": "recipeapp",
-  "homepage": "https://VitaliiDubinin.github.io/recipeApp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,9 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -p3010 --watch ./json_files/db.json",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "server": "json-server -p3010 --watch ./json_files/db.json"
   },
   "eslintConfig": {
     "extends": [

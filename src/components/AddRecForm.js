@@ -74,12 +74,12 @@ const AddRecForm = () => {
 
   // After we have all data collected from inputs, we post the Data object from state.
   const submitData = () => {
-    // axios.post("http://localhost:3010/recipes", data);
+    axios.post("http://localhost:3010/recipes", data);
     // axios.post("https://my-json-server.typicode.com/vitaliidubinin/jsonforrecipeapp/recipes", data);
-    axios
-      .post("https://github.com/vitaliidubinin/jsonforrecipeapp/blob/master/db.json", data)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
+    // axios
+    //   .post("https://github.com/vitaliidubinin/jsonforrecipeapp/blob/master/db.json", data)
+    //   .then((res) => console.log(res))
+    //   .catch((error) => console.log(error));
   };
 
   return (
