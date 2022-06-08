@@ -37,3 +37,11 @@ manifest:
 
 "start_url": "https://vitaliidubinin.github.io/recipeApp/"
 }
+
+"scripts": {
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject",
+"server": "json-server -p3010 --watch ./json_files/db.json"
+},
