@@ -12,6 +12,20 @@ const Home = () => {
         </video>
         {/* </div> */}
         <div className="homeNav">
+          <Link to="/">
+            <div className="noto-emoji emonav">👀 📝 ?</div>
+          </Link>
+          <Link to="/about">
+            <div className="noto-emoji emonav">🧍🏻‍♀️👫🏿👫🧍🏻</div>
+          </Link>
+          <Link to="/addrecipe">
+            <div className="noto-emoji emonav spanImage">+ </div>
+          </Link>
+          <Link to="/recipes">
+            <div className="noto-emoji emonav">👩‍🍳👨‍🍳 </div>
+          </Link>
+        </div>
+        {/* <div className="homeNav">
           <Link to="/recipeApp">
             <div className="noto-emoji emonav">👀 📝 ?</div>
           </Link>
@@ -24,7 +38,7 @@ const Home = () => {
           <Link to="/recipeApp/recipes">
             <div className="noto-emoji emonav">👩‍🍳👨‍🍳 </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );
