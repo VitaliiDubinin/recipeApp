@@ -29,3 +29,11 @@
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 },
+
+manifest:
+{
+"short_name": "Recipe App",
+"name": "Recipe App for Children",
+
+"start_url": "https://vitaliidubinin.github.io/recipeApp/"
+}
