@@ -73,8 +73,9 @@ const AddRecForm = () => {
   };
 
   // After we have all data collected from inputs, we post the Data object from state.
-  const submitData = () => {
-    axios.post("https://tasteofdream.herokuapp.com/api", data);
+  const submitData = (e) => {
+    preventDefault(e);
+    axios.post("https://tasteofdream.herokuapp.com/api/recipes", data);
     // axios.post("http://localhost:3010/recipes", data);
     // axios.post("https://my-json-server.typicode.com/vitaliidubinin/jsonforrecipeapp/recipes", data);
     // axios
