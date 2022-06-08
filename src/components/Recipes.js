@@ -10,7 +10,7 @@ const Recipes = () => {
 
   // const getRecipes = () => axios.get("http://localhost:3010/recipes");
   // const getRecipes = () => axios.get("https://my-json-server.typicode.com/vitaliidubinin/jsonforrecipeapp/recipes");
-  const getRecipes = () => axios.get("https://tasteofdream.herokuapp.com/api");
+  const getRecipes = () => axios.get("https://tasteofdream.herokuapp.com/api/recipes");
   const getCountries = () => axios.get("https://restcountries.com/v3.1/all");
 
   useEffect(() => {
